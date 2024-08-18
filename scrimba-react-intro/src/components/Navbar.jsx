@@ -1,9 +1,16 @@
+import logo from "../assets/logo.png";
+
 
 const Navbar = () => {
   return (
-    <div>
+    
+    <nav className="navbar-con">
+        <img src={logo} alt="" />
+        <p>React Course - Project 1</p>
+    </nav>
+    
       
-    </div>
+    
   )
 }
 
