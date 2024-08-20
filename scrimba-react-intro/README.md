@@ -1,6 +1,4 @@
-Here's a simple README for your project:
 
----
 
 # React Fun Facts Project
 
@@ -18,11 +16,11 @@ This project is a simple React application built as part of the Scrimba course. 
 
 ### Main Content
 
-![SS](./screenshots/ss.png)
+![SS](./ss.png)
 
 ### WantedDesign
 
-![Wanted](./screenshots/wanteddesign.png)
+![Wanted](./wanteddesign.png)
 
 ### Desired Outcome
 The project is designed to be simple yet informative, with a focus on clear typography, clean layout, and visual appeal. The aim is to create an engaging user experience while highlighting key facts about React.
