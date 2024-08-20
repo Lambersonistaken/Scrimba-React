@@ -1,0 +1,35 @@
+body {
+    background-color: #282D35;
+    position: relative;
+}
+
+.main-headline {
+    color: white;
+    margin-left: 2rem;
+    margin-top: 3.5rem;
+}
+
+
+.list {
+    color: white;
+    margin-left: 3.5rem;
+    margin-top: 3rem;
+    font-size: 1.2rem;
+}
+
+
+.list li {
+    margin-top: 1rem;
+}
+
+.list li::marker {
+    color: #61DAFB;
+}
+
+.image {
+    width: 25%;
+    z-index: -1;
+    position: absolute;
+    top: 8rem;
+    right: 0;
+}

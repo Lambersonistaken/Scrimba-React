@@ -1,5 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Inter", sans-serif;
+}
+
+
+
 .navbar-con {
+    font-weight: 700;
+    color: white;
+    padding: 1.5rem;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: #21222A;
 }
