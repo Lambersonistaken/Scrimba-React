@@ -90,6 +90,9 @@ footer {
     background-color: #161619;
     border-radius: 0 0 10px 10px;
     margin-bottom: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .socials {
@@ -103,4 +106,23 @@ footer {
 
 .socials img {
     width: 25px;
+}
+
+@media (min-width: 768px) {
+    .main-container {
+        width: 400px;
+    }
+
+    .image-content {
+        width: 400px;
+        height: 350px;
+    }
+
+    .bio-content {
+        width: 400px;
+    }
+
+    footer {
+        width: 400px;
+    }
 }
