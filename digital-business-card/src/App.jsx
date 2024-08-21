@@ -1,4 +1,8 @@
 import "./app.css"
+import Twitter from "./assets/tw.png"
+import Facebook from "./assets/fb.png"
+import Instagram from "./assets/insta.png"
+import Github from "./assets/github.png"
 
 
 function App() {
@@ -14,24 +18,27 @@ function App() {
 
         <div className="bio-content">
           <h2>İsmail Emir Lambacıoğlu</h2>
-          <h4></h4>
-          <p></p>
+          <h4 className="job-title">Frontend Developer</h4>
+          <p className="mail">ismailemirr54@gmail.com</p>
           <div className="contact">
-            <button></button>
-            <button></button>            
+            <button className="email">Email</button>
+            <button className="linked">LinkedIn</button>            
           </div>
-          <h2></h2>
-          <p></p>
-          <h2></h2>
-          <p></p>
+          <div className="desc">
+          <h3>About</h3>
+          <p>I am a frontend developer with a particular interest in making things simple and automating daily tasks. I try to keep up with security and best practices, and am always looking for new things to learn.</p>
+          <h3>Interests</h3>
+          <p>Food expert. Music scholar. Reader. Internet fanatic. Bacon buff. Entrepreneur. Travel geek. Pop culture ninja. Coffee fanatic.</p>
+          </div>
+          
         </div>
 
         <footer>
           <div className="socials">
-            <a href=""><img src="" alt="" /></a>
-            <a href=""><img src="" alt="" /></a>
-            <a href=""><img src="" alt="" /></a>
-            <a href=""><img src="" alt="" /></a>
+            <a href=""><img src={Twitter} alt="" /></a>
+            <a href=""><img src={Facebook} alt="" /></a>
+            <a href=""><img src={Instagram} alt="" /></a>
+            <a href=""><img src={Github} alt="" /></a>
           </div>
         </footer>
 

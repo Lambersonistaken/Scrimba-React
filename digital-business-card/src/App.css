@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "Inter", sans-serif;
 }
 
 
@@ -11,13 +12,13 @@ body {
 
 .main-container {
     margin: 0 auto;
-    width: 250px;
+    width: 280px;
 }
 
 .image-content {
     margin-top: 2rem;
-    width: 250px;
-    height: 220px;
+    width: 280px;
+    height: 250px;
     border-radius: 10px 10px 0 0;
     background-image: url("./assets/photo.png");
     background-size: cover;
@@ -25,12 +26,81 @@ body {
 }
 
 .bio-content {
-    width: 250px;
-    border: 1px solid red;
+    padding: 1rem;
+    width: 280px;
+    background-color: #1A1B21;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
+    color: white;
+    gap: .5rem;
+}
+
+.bio-content h2 {
+    text-align: center;
+}
+
+.linked {
+    min-width: 115px;
+    padding: 6px 15px 6px 15px;
+    border-radius: 6px;
+    border: none;
     text-align: center;
     color: white;
+    background-color: #5093E2;
+    cursor: pointer;
+}
+
+.email {
+    min-width: 115px;
+    padding: 6px 15px 6px 15px;
+    border-radius: 6px;
+    border: none;
+    text-align: center;
+    cursor: pointer;
+}
+
+.contact {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: .5rem;
+}
+
+.job-title {
+    font-size: 1rem;
+    font-weight: 300;
+    color: #F3BF99;
+}
+
+.mail {
+    font-size: .8rem;
+    margin-bottom: 1rem;
+}
+
+.desc p {
+    font-size: .8rem;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    font-weight: 300;
+}
+
+footer {
+    width: 280px;
+    background-color: #161619;
+    border-radius: 0 0 10px 10px;
+    margin-bottom: 2rem;
+}
+
+.socials {
+    padding: 1rem;
+    width: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.socials img {
+    width: 25px;
 }
