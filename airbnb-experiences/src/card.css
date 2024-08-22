@@ -1,0 +1,53 @@
+.card-image {
+    width: 200px;
+    height: 235px;
+    background-image: url("./assets/bg1.png");
+    background-size: cover;
+    background-position: center;
+    border-radius: 10px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    padding-left: .2rem;
+    padding-top: .2rem;
+}
+
+.main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 2rem;
+}
+
+.toast {
+    width: 80px;
+    height: 40px;
+    background-color: #FFFFFF;
+    padding: .3rem;
+    border-radius: 4px;
+    font-size: .7rem;
+    font-weight: 500;
+}
+
+.container-text {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: .2rem;
+    margin-bottom: 1rem;
+}
+
+.rating-con {
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: .5rem;
+}
+
+.event-title {
+    font-size: .8rem;
+}
+
+.rating-text {
+    color: #918E9B;
+}
