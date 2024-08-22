@@ -1,0 +1,37 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+}
+
+.hero-image {
+    width: 500px;
+}
+
+.image-con {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+    padding: 1rem 3rem 1rem 3rem;
+}
+
+.image-con:hover {
+    scale: 1.02;
+    transition: 0.5s;
+}
+
+.text-con p {
+    color: #222222;
+    font-weight: 400;
+    font-size: 1.2rem;
+}
+
+.text-con h1 {
+    font-weight: 600;
+}
+
+.text-con {
+    padding: 2rem 1.5rem 1rem 2rem;
+}
