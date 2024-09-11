@@ -3,6 +3,7 @@ import Navbar from "./Navbar"
 import Card from "./Card"
 import star from "../public/assets/star.png"
 import CardData from "./CardData"
+import "./card.css"
 
 const cards = CardData.map((card) => {
   return (
@@ -29,7 +30,10 @@ function App() {
     <>
       <Navbar/>
       <Hero/>
+      <div className="card-component">
       {cards}
+      </div>
+      
     </>
   )
 }
