@@ -1,7 +1,6 @@
 .card-image {
     width: 200px;
     height: 235px;
-    background-image: url("./assets/bg1.png");
     background-size: cover;
     background-position: center;
     border-radius: 10px;

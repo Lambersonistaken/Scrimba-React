@@ -1,5 +1,5 @@
 import "./navbar.css";
-import Airbnb from "./assets/airbnblogo.png"
+import Airbnb from "../public/assets/airbnblogo.png"
 
 const Navbar = () => {
   return (

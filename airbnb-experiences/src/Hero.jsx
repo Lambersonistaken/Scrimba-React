@@ -1,5 +1,5 @@
 import "./hero.css"
-import experience from "./assets/experience.png"
+import experience from "../public/assets/experience.png"
 
 const Hero = () => {
   return (
