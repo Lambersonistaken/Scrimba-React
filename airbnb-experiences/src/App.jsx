@@ -16,6 +16,7 @@ const cards = CardData.map((card) => {
       reviewCount={card.stats.reviewCount}
       rating={card.stats.rating}
       img={star}
+      status={card.openSpots === 0 ? "Sold Out" : "Available"}
     />
   )
 }

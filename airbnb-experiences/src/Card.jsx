@@ -2,12 +2,12 @@
 import "./card.css"
 
 
-const Card = ({title,price,location, reviewCount, rating,img, coverImg}) => {
+const Card = ({title,price,location, reviewCount, rating,img, coverImg, status}) => {
   return (
     <>
     <div className="main-container">
         <div className="card-image" style={{backgroundImage: `url(${coverImg})`}}>
-            <span className="toast">SOLD OUT</span>
+            <span className="toast">{status}</span>
         </div>
 
 
