@@ -1,8 +1,33 @@
-# React + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# Digital Business Card
 
-Currently, two official plugins are available:
+This project is a simple, responsive portfolio webpage created with React, featuring clean and modern design, utilizing CSS for styling and incorporating social media icons to enhance interactivity.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Features
+
+- **Profile Header**: Displays a profile picture, name, and job title.
+- **Contact Information**: Contains buttons for email and LinkedIn communication.
+- **Bio Section**: Provides a brief description of the developer and personal interests.
+- **Social Media Links**: Includes clickable icons for Twitter, Facebook, Instagram, and GitHub.
+- **Responsive Design**: Adapts to different screen sizes for a better user experience.
+
+## Technologies Used
+
+- **React**: For building the UI components.
+- **CSS**: For custom styling and layout design.
+- **Responsive Design**: Media queries ensure that the design works across various devices.
+- **Images and Icons**: Used to add visual elements and social media interactivity.
+
+## Screenshots
+
+### Main Content
+![Main](./desktopss.png)
+
+
+
+
+## Desired Outcome
+
+The goal of this project is to present a simple and informative portfolio page that showcases a developer’s profile, contact details, and social links, all in a visually appealing format with responsive design principles.
+
+
