@@ -1,5 +1,5 @@
 import "./Header.css";
-import Globe from "../assets/Globe.svg";
+import Globe from "../../public/assets/Globe.svg";
 
 const Header = () => {
   return (
