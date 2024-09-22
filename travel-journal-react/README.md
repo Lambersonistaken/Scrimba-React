@@ -1,5 +1,5 @@
 
-# Travel Journal
+# Travel Journal React
 
 A simple travel journal web application built with React, showcasing a list of places with details like location, Google Maps link, description, and travel dates. The app is responsive and provides views for desktop, mobile, and mini mobile screen sizes.
 
@@ -24,9 +24,14 @@ The app provides three different views:
 
 Include screenshots for each view here:
 
-- **Desktop View**: ![Desktop View](./desktopss.png)
-- **Mobile View**: ![Mobile View](./mobiless.png)
-- **Mini Mobile View**: ![Mini Mobile View](./miniphones.png)
+- **Desktop View**: 
+![Desktop View](./desktopss.png)
+
+- **Mobile View**: 
+![Mobile View](./mobiless.png)
+
+- **Mini Mobile View**: 
+![Mini Mobile View](./miniphones.png)
 
 
 ## File Structure
