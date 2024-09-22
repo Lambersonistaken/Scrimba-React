@@ -24,13 +24,16 @@ The app provides three different views:
 
 Include screenshots for each view here:
 
-- **Desktop View**: 
+- **Desktop View**:
+##
 ![Desktop View](./desktopss.png)
 
-- **Mobile View**: 
+- **Mobile View**:
+##
 ![Mobile View](./mobiless.png)
 
-- **Mini Mobile View**: 
+- **Mini Mobile View**:
+##
 ![Mini Mobile View](./miniphones.png)
 
 
