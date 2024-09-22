@@ -30,6 +30,4 @@ This project is a simple, responsive portfolio webpage created with React, featu
 
 The goal of this project is to present a simple and informative portfolio page that showcases a developer’s profile, contact details, and social links, all in a visually appealing format with responsive design principles.
 
----
 
-Let me know if you'd like any changes or additional details!
