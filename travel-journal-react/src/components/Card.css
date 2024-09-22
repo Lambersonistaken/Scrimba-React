@@ -16,8 +16,8 @@
 }
 
 .left-content img {
-    width: 155px;
-    height: 228px;
+    width: 160px;
+    height: 240px;
     border-radius: 5px;
 
 }
@@ -135,5 +135,24 @@
 
     .right-content-dates {
         font-size: .8rem;
+    }
+}
+
+@media (max-width:551px) and (min-width:462px) {
+    .left-content img {
+        width: 185px;
+        height: 278px;
+    }
+
+    .right-content-desc {
+        font-size: .85rem;
+    }
+
+    .right-content h1 {
+        font-size: 1.8rem;
+    }
+
+    .right-content {
+        gap: .5rem;
     }
 }
