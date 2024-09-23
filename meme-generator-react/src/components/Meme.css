@@ -25,17 +25,22 @@ label {
     margin-top: 1rem;
 }
 
+input::placeholder {
+    color: #9CA3AF;
+    font-weight: 500;
+}
+
 input {
-    width: 222px;
-    height: 35px;
+    width: 252px;
+    height: 45px;
     border: 1px solid #D1D5DB;
     border-radius: 5px;
     padding: 7px 10px;
 }
 
 .submit-button {
-    width: 477px;
-    height: 40px;
+    width: 487px;
+    height: 50px;
     margin-top: 1rem;
     border-radius: 5px;
     background: rgb(103, 34, 128);
