@@ -1,15 +1,19 @@
 import "./Meme.css";
 import MemeData from "../memesData"
-import {useState} from "react";
+import { useState } from "react";
 
 const Meme = () => {
 
-    function randomImage (e) {
-        e.preventDefault();
-        let random = Math.floor(Math.random()*MemeData.data.memes.length);
-        let memeUrl = MemeData.data.memes[random].url
-        console.log(memeUrl)
-    }
+
+  const [memeImage, setMemeImage] = useState("")
+
+
+  function getMemeImage() {
+    const memesArray = MemeData.data.memes
+    const randomNumber = Math.floor(Math.random() * memesArray.length)
+    setMemeImage(memesArray[randomNumber].url)
+    
+}
 
 
 
@@ -26,8 +30,9 @@ const Meme = () => {
                 <input type="text" name="bottom" placeholder="Enter Bottom Text" />
             </div>
         </section>
-        <button onClick={randomImage} className="submit-button">Get a new meme image  🖼️</button>
+        <button onClick={getMemeImage} className="submit-button">Get a new meme image  🖼️</button>
       </form>
+      <img src={memeImage} alt="" />
     </>
   )
 }
