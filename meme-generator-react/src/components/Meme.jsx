@@ -1,5 +1,6 @@
 import "./Meme.css";
 import MemeData from "../memesData"
+import {useState} from "react";
 
 const Meme = () => {
 
