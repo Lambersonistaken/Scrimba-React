@@ -8,7 +8,8 @@ const Meme = () => {
   const [memeImage, setMemeImage] = useState("")
 
 
-  function getMemeImage() {
+  function getMemeImage(e) {
+    e.preventDefault()
     const memesArray = MemeData.data.memes
     const randomNumber = Math.floor(Math.random() * memesArray.length)
     setMemeImage(memesArray[randomNumber].url)
@@ -32,7 +33,9 @@ const Meme = () => {
         </section>
         <button onClick={getMemeImage} className="submit-button">Get a new meme image  🖼️</button>
       </form>
-      <img src={memeImage} alt="" />
+      <img className="meme-image" width={400} height={400} src={memeImage} alt="" />
+     
+      
     </>
   )
 }
