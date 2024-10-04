@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 import "./Meme.css";
 import MemeData from "../memesData"
 import { useState } from "react";
@@ -5,14 +6,26 @@ import { useState } from "react";
 const Meme = () => {
 
 
-  const [memeImage, setMemeImage] = useState("")
+  const [allMemeImages, setAllMemeImages] = useState(MemeData)
+    
+    const [memeImage, setMemeImage] = useState({
+        topText : "",
+        bottomText: "",
+        randomImage : "http://i.imgflip.com/1bij.jpg"
+    })
 
 
   function getMemeImage(e) {
     e.preventDefault()
-    const memesArray = MemeData.data.memes
-    const randomNumber = Math.floor(Math.random() * memesArray.length)
-    setMemeImage(memesArray[randomNumber].url)
+    const memesArray = allMemeImages.data.memes
+        const randomNumber = Math.floor(Math.random() * memesArray.length)
+        setMemeImage(prevState => {
+            return {
+                ...prevState,
+                randomImage: memesArray[randomNumber].url
+            }
+        })
+        
     
 }
 
@@ -33,7 +46,7 @@ const Meme = () => {
         </section>
         <button onClick={getMemeImage} className="submit-button">Get a new meme image  🖼️</button>
       </form>
-      <img className="meme-image" width={400} height={400} src={memeImage} alt="" />
+      <img className="meme-image" width={400} height={400} src={memeImage.randomImage} alt="" />
      
       
     </>
