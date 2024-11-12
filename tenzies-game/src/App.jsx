@@ -1,6 +1,8 @@
 /* eslint-disable no-unused-vars */
 import './App.css'
 import Die from './components/Die'
+import { useState } from 'react';
+import {nanoid} from "nanoid"
 
 function App() {
 
@@ -8,13 +10,24 @@ function App() {
     let diceArr = [];
     
     for(let i =0; i<10; i++) {
-        let random = Math.floor(Math.random() * 6);
-        diceArr.push(random)
+        let random = Math.ceil(Math.random() * 6);
+        diceArr.push({id:nanoid(),value:random, isHeld:false})
     }
     
     return diceArr
 }
 
+const[dices,setDices] = useState(allNewDice)
+
+const diceElements = dices.map((item) => {
+  return (
+    <Die key={item.id} value={item.value}/>
+  )
+})
+
+function handleClick () {
+  setDices(allNewDice)
+}
   
 
   return (
@@ -22,17 +35,9 @@ function App() {
     <main>
       <div className='inside-div'>
         <div className='dice-con'>
-        <Die value={5}/>
-        <Die value={4}/>
-        <Die value={3}/>
-        <Die value={2}/>
-        <Die value={5}/>
-        <Die value={1}/>
-        <Die value={5}/>
-        <Die value={3}/>
-        <Die value={5}/>
-        <Die value={6}/>
+        {diceElements}
         </div>
+        <button onClick={handleClick} className='roll-button'>Roll</button>
       </div>
     </main>
       
