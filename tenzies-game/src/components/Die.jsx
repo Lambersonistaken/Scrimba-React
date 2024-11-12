@@ -4,7 +4,7 @@ import "../App.css"
 const Die = (props) => {
   return (
     <div>
-      <div className="card">
+      <div className="die-face">
         {props.value}
       </div>
     </div>
