@@ -2,9 +2,14 @@
 import "../App.css"
 
 const Die = (props) => {
+
+    const styles = {
+        backgroundColor: props.isHeld ? "#59E391" : "white"
+    }
+
   return (
     <div>
-      <div className="die-face">
+      <div onClick={props.holdDice} className="die-face" style={styles}>
         {props.value}
       </div>
     </div>

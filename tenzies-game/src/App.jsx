@@ -1,4 +1,3 @@
-/* eslint-disable no-unused-vars */
 import './App.css'
 import Die from './components/Die'
 import { useState } from 'react';
@@ -21,12 +20,16 @@ const[dices,setDices] = useState(allNewDice)
 
 const diceElements = dices.map((item) => {
   return (
-    <Die key={item.id} value={item.value}/>
+    <Die key={item.id} isHeld={item.isHeld} value={item.value} holdDice={() => holdDice(item.id)}/>
   )
 })
 
 function handleClick () {
   setDices(allNewDice)
+}
+
+function holdDice(id) {
+  setDices(prevDice => prevDice.map((item) => item.id === id ? {...item, isHeld: !item.isHeld} : item))
 }
   
 
