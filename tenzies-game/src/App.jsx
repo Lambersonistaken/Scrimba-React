@@ -1,19 +1,31 @@
 import './App.css'
 import Die from './components/Die'
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import {nanoid} from "nanoid"
 
 function App() {
 
-  function allNewDice () {
-    let diceArr = [];
+
+  const [tenzies, setTenzies] = useState(false)
     
-    for(let i =0; i<10; i++) {
-        let random = Math.ceil(Math.random() * 6);
-        diceArr.push({id:nanoid(),value:random, isHeld:false})
+    useEffect(() => {
+        console.log("Dice state changed")
+    }, [dices])
+
+  function generateNewDie() {
+    return {
+        value: Math.ceil(Math.random() * 6),
+        isHeld: false,
+        id: nanoid()
     }
-    
-    return diceArr
+}
+
+function allNewDice() {
+  const newDice = []
+  for (let i = 0; i < 10; i++) {
+      newDice.push(generateNewDie())
+  }
+  return newDice
 }
 
 const[dices,setDices] = useState(allNewDice)
@@ -25,7 +37,11 @@ const diceElements = dices.map((item) => {
 })
 
 function handleClick () {
-  setDices(allNewDice)
+  setDices(oldDice => oldDice.map(die => {
+    return die.isHeld ? 
+        die :
+        generateNewDie()
+}))
 }
 
 function holdDice(id) {
