@@ -28,7 +28,7 @@ main {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: .5rem;
   width: 460px;
   height: 460px;
   border-radius: 10px;
@@ -81,4 +81,9 @@ main {
 .tenzies-title {
   margin: 0;
   text-align: center;
+}
+
+.instructions {
+  font-weight: 400;
+  font-size: 1rem;
 }

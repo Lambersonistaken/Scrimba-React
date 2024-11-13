@@ -1,3 +1,4 @@
+/* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-unused-vars */
 import './App.css'
 import Die from './components/Die'
@@ -9,7 +10,12 @@ function App() {
 
 
   const [tenzies, setTenzies] = useState(false)
+  const [count, setCount] = useState(0)
 
+
+  function handleCount () {
+    setCount(count+1)
+  }
   
 
 function allNewDice() {
@@ -42,6 +48,7 @@ useEffect(() => {
       setTenzies(true)
       console.log("You won!")
   }
+  
 }, [dices])
 
 function generateNewDie() {
@@ -56,12 +63,14 @@ function handleClick () {
   if(tenzies) {
     setTenzies(false)
     setDices(allNewDice())
+    setCount(0)
   }
   setDices(oldDice => oldDice.map(die => {
     return die.isHeld ? 
         die :
         generateNewDie()
 }))
+handleCount()
 }
 
   return (
@@ -74,6 +83,7 @@ function handleClick () {
             <p className="instructions">Roll until all dice are the same. 
             Click each die to freeze it at its current value between rolls.</p>
         </div>
+        <h2 style={{margin:0}}>{count}</h2>
         <div className='dice-con'>
         {diceElements}
         </div>
