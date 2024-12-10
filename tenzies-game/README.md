@@ -38,5 +38,7 @@ Tenzies is a fun, interactive dice game built with React where the goal is to ro
 
 ## Screenshot
 
-Include a screenshot of the main game interface.
+![Main](./ss1.png)
+![Main](./ss2.png)
+![Main](./ss3.png)
 
