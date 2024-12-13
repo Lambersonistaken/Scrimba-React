@@ -1,0 +1,8 @@
+.back-to-vans {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    margin-left: 1rem;
+}

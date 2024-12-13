@@ -1,18 +1,23 @@
 .van-list-container {
+    text-decoration: none;
     padding-inline: 23px;
     padding: 1rem;
+}
+
+a {
+    text-decoration: none;
 }
 
 .van-list {
     display: grid;
     grid-template-columns: 1fr 1fr;
     justify-items: center;
-    gap: 34px;
+    gap: 3rem;
     margin-top: 57px;
 }
 
 .van-tile a {
-    color: #161616;
+    color: #161616 !important;
     text-decoration: none;
 }
 
@@ -79,10 +84,12 @@
 }
 
 i[class*='van-type-'] {
+    text-decoration: none;
     padding: 7px 14px;
 }
 
 .van-info {
+    color: #161616 !important;
     display: flex;
     justify-content: space-between;
     align-items: center;
