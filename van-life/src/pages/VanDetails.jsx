@@ -7,17 +7,14 @@ import { useEffect, useState } from "react"
 const VanDetails = () => {
   const params = useParams();
 
-  const [vanDetail, setVanDetail] = useState();
+  const [van, setVan] = useState(null)
 
   useEffect(() => {
     fetch(`/api/vans/${params.id}`)
-    .then(res => res.json())
-    .then(data => {
-        setVanDetail(data.vans)
-    })
-  }, [])
+        .then(res => res.json())
+        .then(data => setVan(data.vans))
+}, [params.id])
 
-  console.log(vanDetail)
 
   return (
     <div className="van-detail-page">
@@ -27,13 +24,17 @@ const VanDetails = () => {
       </div>
 
       <div className="van-detail-container">
-        <img className="van-image" src={vanDetail.imageUrl} alt="" />
-        <div>{vanDetail.type}</div>
-        <h1>{vanDetail.name}</h1>
-        <h3>{vanDetail.price}</h3>
-        <p>{vanDetail.description}</p>
-        <button>Rent this van</button>
-      </div>
+            {van ? (
+                <div className="van-detail">
+                    <img src={van.imageUrl} />
+                    <i className={`van-type ${van.type} selected`}>{van.type}</i>
+                    <h2>{van.name}</h2>
+                    <p className="van-price"><span>${van.price}</span>/day</p>
+                    <p>{van.description}</p>
+                    <button className="link-button">Rent this van</button>
+                </div>
+            ) : <h2>Loading...</h2>}
+        </div>
 
     </div>
   )
