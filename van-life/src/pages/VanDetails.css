@@ -6,3 +6,17 @@
     gap: 1rem;
     margin-left: 1rem;
 }
+
+.van-detail-container {
+    display: flex;
+    align-items: start;
+    padding: 2rem;
+    flex-direction: column;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.van-image {
+    width: 450px;
+    border-radius: 10px;
+}
