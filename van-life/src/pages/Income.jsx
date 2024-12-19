@@ -2,7 +2,7 @@
 const Income = () => {
   return (
     <div>
-      <h1>This is hOST Income page.</h1>
+      <h1>This is Host Income page.</h1>
     </div>
   )
 }
