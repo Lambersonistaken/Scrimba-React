@@ -27,6 +27,7 @@ function App() {
         <Route path="/host/income" element={<Income/>}/>
         <Route path="/host/reviews" element={<Reviews/>}/>
         </Route>
+
         
       </Route>
     </Routes>
