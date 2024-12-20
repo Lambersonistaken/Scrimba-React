@@ -1,11 +1,6 @@
 
-
-const Dashboard = () => {
-  return (
-    <div>
-      <h1>This is Host Dashboard</h1>
-    </div>
-  )
+export default function Dashboard() {
+    return (
+        <h1>Dashboard goes here</h1>
+    )
 }
-
-export default Dashboard
