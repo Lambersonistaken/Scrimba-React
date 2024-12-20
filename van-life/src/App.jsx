@@ -9,6 +9,7 @@ import Layout from './components/Layout'
 import Dashboard from './pages/Dashboard'
 import Income from './pages/Income'
 import Reviews from './pages/Reviews'
+import HostLayout from "./components/HostLayout"
 
 function App() {
   
@@ -20,9 +21,13 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/vans" element={<Vans/>}/>
         <Route path="/vans/:id" element={<VanDetails/>}/>
+
+        <Route element={<HostLayout/>}>
         <Route path="/host" element={<Dashboard/>}>
         <Route path="/host/income" element={<Income/>}/>
         <Route path="/host/reviews" element={<Reviews/>}/>
+        </Route>
+        
         </Route>
         
       </Route>
