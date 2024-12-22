@@ -15,6 +15,7 @@ export default function HostHeader() {
             <nav>
                 <NavLink to="/host" end style={({isActive}) => isActive ? activated : null}>Dashboard</NavLink>
                 <NavLink to="/host/income" style={({isActive}) => isActive ?  activated : null}>Income</NavLink>
+                <NavLink to="/host/vans" style={({isActive}) => isActive ?  activated : null}>Vans</NavLink>
                 <NavLink to="/host/reviews" style={({isActive}) => isActive ? activated : null}>Reviews</NavLink>
             </nav>
         </header>
